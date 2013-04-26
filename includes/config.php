@@ -1,5 +1,7 @@
 <?php
 
+define('DEBUG', 'false'); // Does nothing at the moment. Extra debug stuff later
+
 define('GMAIL_USER', '');
 define('GMAIL_PASS', '');
 define('GMAIL_NAME', ''); // 'From' name to use for outgoing emails
