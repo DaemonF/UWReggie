@@ -1,7 +1,9 @@
 <?php
 
-require_once('gmail.php');
+require_once('config.php');
 require_once('text2email.php');
+require_once('gmail.php');
+$gmail = new gmail(GMAIL_USER, GMAIL_PASS, GMAIL_NAME);
 
 class GoogleVoice{
 	function __construct($user, $password){
