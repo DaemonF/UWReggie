@@ -11,9 +11,10 @@ Reggie requires a full webserver stack (Any server with PHP and MySql) and PHP p
 
 - Clone repo
 - Copy contents of 'web' to the root of a web server directory
-- Edit 'includes/config.php' to use your google accounts
+- Create a MySql DB called 'uwreggiedb' and import 'mysql/uwreggiedb.sql'
+- Create a user with full permissions on that database
+- Edit 'includes/config.php' to use your gmail, google voice and mysql login credentials.
 - Copy contents of 'includes' to any directory listed in php.ini's include path
-- Import the empty MySQL database from the 'mysql' directory
 - Create an acount on your local installation of the website and add alerts
 - Change directory to 'backend' and run 'php -f Main.php' to check for open spaces in any classes you have added
 - Repeat step 6 as many times as you want to check each class (Main.php does one cycle through the requests)
