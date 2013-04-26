@@ -1,0 +1,21 @@
+#!/bin/bash
+
+DIR=$0 #Make sure that we are in the right working dir for the logs
+
+cd $DIR
+
+while true
+do
+	cp main.log lastrun.log
+
+    echo "Start Run - `date`" >> ./status.log
+
+	# Start fifo listener
+	php -f SendAlerts.php >> ./sendalerts.log 2>> ./status.log &
+	PID=$!
+
+	# Start main thread
+	php -f Main.php > ./main.log 2>> ./status.log || kill -9 $PID
+
+	echo "End Run - `date`" >> ./status.log
+done

@@ -1,0 +1,3 @@
+disallow: /snippets/
+disallow: /logout.php
+disallow: /404.php
