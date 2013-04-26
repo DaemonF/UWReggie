@@ -7,9 +7,7 @@ To use the system, create a free account at http://uwreggie.com. To set up a loc
 Dev Set Up
 ==========
 
-Reggie requires the following:
-- [ ] Webserver stack (Any server with PHP and MySql)
-- [ ] PHP pear mail
+Reggie requires a full webserver stack (Any server with PHP and MySql) and PHP pear mail
 
 - Clone repo
 - Copy contents of 'web' to the root of a web server directory
